@@ -1,0 +1,39 @@
+Started by upstream project "package-and-deploy-software" build number 410
+originally caused by:
+|[EnvInject] - Loading node environment variables.
+|Building in workspace /var/lib/jenkins/jobs/deploy-puppet-run/workspace
+|executing script 'Deploy puppet-run'
+|[workspace] $ /bin/sh /tmp/build_step_template2758343737121384812.sh development Package lludss
+|
+|[ --- Query puppetdb nodes for Package: lludss in the development environment --- ]
+|
+|Nodes to process:
+|-----------------
+|
+| * development.server.hostname
+|
+|[ --- Trigger puppet runs through ansible in the development environment  --- ]
+|
+|Process development.server.hostname:
+|
+|development.server.hostname | success | rc=0 >>
+|Loaded plugins: fastestmirror, security
+|Cleaning repos: development production sartre sartre_noarch
+|Cleaning up Everything
+|Cleaning up list of fastest mirrors
+|Info: Retrieving pluginfacts
+|Info: Retrieving plugin
+|Info: Loading facts
+|Info: Caching catalog for development.server.hostname
+|Info: Applying configuration version '1422889889'
+|Notice: /Stage[main]/Lludss_interface::Install/Package[lludss]/ensure: ensure changed '1.0-1120' to '0:1.0-1122'
+|Info: /Stage[main]/Lludss_interface::Install/Package[lludss]: Scheduling refresh of Exec[touch-restart]
+|Notice: /Stage[main]/Lludss_interface::Install/Exec[touch-restart]: Triggered 'refresh' from 1 events
+|Notice: Finished catalog run in 84.41 seconds
+|
+|====================================================================================
+|Notifying upstream projects of job completion
+|Finished: SUCCESS
+
+
+
